@@ -1,0 +1,467 @@
+:root{
+  --ffont: 14px;
+  --sfont: 12px;
+  --lfont: 32px;
+  --hfont: 22px;
+  --bgcolor: #f0eeed;
+  --secbgcolor: #ffffff;
+  --darkf: #242424;
+  --lightf: #b1b1b1;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a{
+  text-decoration: none;
+  color: var(--darkf);
+}
+body{
+  /* height: 100vh; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.root{
+  height: max-content;
+  width: 1380px;
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 70px;
+  background-color: var(--bgcolor);
+}
+nav .nav_left{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+nav .nav_left .mail{
+  font-size: var(--ffont);
+  color: var(--darkf);
+  cursor: default;
+}
+nav .nav_left .button button{
+  font-size: var(--sfont);
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background-color: var(--secbgcolor);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+nav .nav_left .button button:hover{
+  transform: scale(1.05);
+}
+.nav_right_socials{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--ffont);
+  color: var(--darkf);
+}
+.nav_right_socials .seperate{
+  cursor: default;
+  color: var(--lightf);
+}
+.about {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding-top: 130px ;
+  background-color: var(--bgcolor);
+  border-radius: 0 0 70px 70px;
+}
+.about .pfp_card {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  border: 2px solid var(--secbgcolor);
+  border-radius: 50%;
+  background-color: var(--secbgcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .pfp_card img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about .pfp_card .name_box {
+  position: absolute;
+  left: 60px;
+  top: 40%;
+  transform: translateY(-50%) rotate(-10deg);
+  background-color: var(--secbgcolor);
+  padding: 5px 15px;
+  text-align: center;
+  font-size: var(--sfont);
+  color: var(--darkf);
+  border-radius: 40px;
+  white-space: nowrap; 
+}
+.about .slogan_line{
+  font-size: var(--lfont);
+  text-align: center;
+  color: var(--darkf);
+  font-weight: 500;
+}
+.about .cv_download{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .cv_download button{
+  font-size: var(--sfont);
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background-color: var(--darkf);
+  color: var(--secbgcolor);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.about .cv_download button:hover{
+  transform: scale(1.05);
+}
+.tools{
+  height: 220px;
+  width: 100%;
+  border-radius: 0px 0px 70px 70px;
+  background-color: var(--secbgcolor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 70px;
+}
+.tools img{
+  height: 60px;
+}
+.services{
+  height: 780px;
+  width: 100%;
+  border-radius: 70px;
+  background-color: var(--bgcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  padding: 0px 70px;
+}
+.services .head_service{
+  font-size: var(--lfont);
+  font-weight: 500;
+  color: var(--darkf);
+  text-align: center;
+}
+.services .break_service {
+  position: relative;
+  border: 1px solid var(--lightf);
+  width: 100%;
+  height: 2px;
+}
+
+.services .break_service .center_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  background-color: var(--secbgcolor);
+  padding: 6px 18px;
+  color: var(--darkf);
+  font-size: var(--ffont);
+  font-weight: 500;
+  border-radius: 40px;
+  white-space: nowrap;
+}
+.services .service_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.services .service_box .box{
+  padding: 20px 60px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.services .service_box .box h3{
+  font-size: var(--hfont);
+  color: var(--darkf);
+  font-weight: 500;
+}
+.services .service_box .box p{
+  font-size: var(--sfont);
+  color: var(--darkf);
+}
+.services .service_box .box i{
+  font-size: var(--lfont);
+  color: var(--darkf);
+}
+.contact{
+  height: 740px;
+  width: 100%;
+  background-color: var(--secbgcolor);
+  padding: 0 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 160px;
+}
+.contact .contact_pfp{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: var(--bgcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact_pfp i{
+  font-size: var(--lfont);
+}
+.contact .contact_slogan{
+  text-align: center;
+  font-size: var(--lfont);
+  font-weight: 500;
+  color: var(--darkf);
+}
+.contact .contact_buttons{
+  display: flex;
+  gap: 10px;
+  /* margin-bottom: 150px; */
+}
+.contact .contact_buttons button{
+  font-size: var(--sfont);
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background-color: var(--darkf);
+  color: var(--secbgcolor);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.contact .contact_buttons .sbtn{
+  background-color: var(--bgcolor);
+  color: var(--darkf);
+}
+.contact .contact_buttons button:hover{
+  transform: scale(1.05);
+}
+.contact .copy{
+  justify-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  border-top: 1px solid var(--lightf);
+  width: 100%;
+  margin-top: 120px;
+}
+.contact .copy .right{
+  color: var(--darkf);
+  font-size: var(--ffont);
+}
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+  nav {
+    padding: 0 30px;
+  }
+
+  .about {
+    padding-top: 60px;
+    height: auto;
+    gap: 15px;
+  }
+
+  .tools {
+    flex-wrap: wrap;
+    gap: 15px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .services {
+    height: auto;
+    padding: 40px 30px;
+    gap: 40px;
+  }
+
+  .services .service_box {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .contact {
+    height: auto;
+    padding: 60px 30px;
+    gap: 20px;
+  }
+
+  .contact_buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copy {
+    margin-top: 60px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 15px 20px;
+  }
+
+  nav .nav_left,
+  .nav_right_socials {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .about {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    gap: 10px;
+    height: auto;
+  }
+
+  .about .slogan_line {
+    font-size: 18px;
+  }
+
+  .tools {
+    height: auto;
+    gap: 10px;
+    padding: 40px 20px;
+  }
+
+  .services {
+    height: auto;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .services .service_box {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact {
+    padding: 40px 20px;
+    height: auto;
+    gap: 20px;
+  }
+
+  .contact_slogan {
+    font-size: 22px;
+  }
+
+  .contact_buttons button {
+    width: 100%;
+  }
+
+  .copy {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 20px !important;
+    padding-top: 20px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  nav {
+    padding: 10px;
+  }
+
+  .about {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    gap: 8px;
+    height: auto;
+  }
+  .nav_left .button{
+    display: none;
+  }
+
+  .about .slogan_line {
+    font-size: 16px;
+  }
+
+  .tools {
+    height: auto;
+    gap: 5px;
+    padding: 30px;
+  }
+
+  .tools img {
+    height: 30px;
+  }
+
+  .services {
+    height: auto;
+    padding: 50px 10px;
+    gap: 20px;
+  }
+
+  .services .head_service {
+    font-size: 18px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contact {
+    padding: 0px 10px;
+    padding-top: 50px;
+    gap: 15px;
+    height: auto;
+  }
+
+  .contact_slogan {
+    font-size: 18px;
+  }
+
+  .contact_buttons button {
+    width: 100%;
+  }
+
+  .copy {
+    font-size: 12px;
+    margin-top: 20px !important;
+    padding-top: 10px;
+  }
+}
+
