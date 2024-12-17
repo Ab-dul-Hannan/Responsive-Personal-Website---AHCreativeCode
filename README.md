@@ -59,8 +59,8 @@ The website adapts to the following screen sizes:
 ```plaintext
 Project/
 │
-├── index.html        # Main HTML file
-├── css/
-│   └── style.css     # Stylesheet with media queries
+├── index.html               # Main HTML file
 └── assets/
-    └── images/       # Images, icons, or other assets
+    ├── css/
+    │   └── style.css        # Stylesheet with media queries
+    └── images/              # Images, icons, or other assets
